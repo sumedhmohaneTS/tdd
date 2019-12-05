@@ -13,12 +13,12 @@ public class VowelCounterTest {
 
   @Test
   public void testSingleVowel() {
-    assertEquals(Integer.valueOf(0), new VowelCounter().getCount("a"));
+    assertEquals(Integer.valueOf(1), new VowelCounter().getCount("a"));
   }
 
   @Test
   public void testMultipleVowel() {
-    assertEquals(Integer.valueOf(0), new VowelCounter().getCount("aeiou"));
+    assertEquals(Integer.valueOf(5), new VowelCounter().getCount("aeiou"));
   }
 
 
